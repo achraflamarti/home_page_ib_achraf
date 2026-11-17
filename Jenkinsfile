@@ -4,7 +4,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = 'ibcgos-frontend-achraf'
-        IMAGE_TAG = '1.0'
+        IMAGE_TAG = '2.0'
 
         // Remplacer par ton username Docker Hub
         DOCKERHUB_USERNAME = 'lamartiachraf'
@@ -137,7 +137,7 @@ pipeline {
         success {
             echo 'Application IBCGOS deployee avec succes !'
             echo 'Image publiee sur Docker Hub.'
-            echo 'URL : http://jenkins.sip-academy.com:8059'
+            echo 'URL : http://jenkins.sip-academy.com:8060'
         }
 
         failure {
