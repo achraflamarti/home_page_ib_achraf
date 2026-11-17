@@ -13,7 +13,7 @@ pipeline {
         HOST_PORT = '8060'
         CONTAINER_PORT = '80'
 
-        DOCKERHUB_CREDENTIALS = 'dockerhub-credentials-achraf'
+        DOCKERHUB_CREDENTIALS = 'dockerhub2-credentials-achraf'
     }
 
     stages {
@@ -38,8 +38,6 @@ pipeline {
 
         stage('DockerHub Login') {
             steps {
-                echo 'Authentification sur Docker Hub...'
-
                 withCredentials([
                     usernamePassword(
                         credentialsId: "${DOCKERHUB_CREDENTIALS}",
