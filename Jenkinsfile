@@ -6,7 +6,7 @@ pipeline {
         IMAGE_NAME = 'ibcgos-frontend-achraf'
         IMAGE_TAG = '1.0'
         CONTAINER_NAME = 'ibcgos-container-achraf'
-        HOST_PORT = '8098'
+        HOST_PORT = '8060'
         CONTAINER_PORT = '80'
     }
 
