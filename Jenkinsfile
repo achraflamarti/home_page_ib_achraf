@@ -66,7 +66,7 @@ pipeline {
     post {
         success {
             echo 'Application IBCGOS déployée avec succès !'
-            echo 'URL : https://jenkins.sip-academy.com:8060'
+            echo 'URL : http://jenkins.sip-academy.com:8060'
         }
 
         failure {
