@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IBCGOS - Centre de formation et de développement des compétences.">
+  <title>IBCGOS | Centre de formation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigation principale">
+      <a class="brand" href="#accueil"><span class="brand-mark">I</span><span>IBCGOS<small>Centre de formation</small></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#formations">Formations</a></li>
+        <li><a href="#avantages">Pourquoi nous ?</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">APPRENDRE · PROGRESSER · RÉUSSIR</p>
+        <h1>Développez vos compétences,<br><span>construisez votre avenir.</span></h1>
+        <p class="hero-text">IBCGOS vous accompagne dans votre parcours de formation grâce à des programmes conçus pour développer vos compétences et révéler votre potentiel.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#formations">Découvrir nos formations</a>
+          <a class="button button-outline" href="#apropos">En savoir plus</a>
+        </div>
+      </div>
+      <div class="hero-note"><strong>Votre avenir commence ici.</strong><span>Investissez dans vos compétences.</span></div>
+    </section>
+
+    <section class="intro section container" id="apropos">
+      <div>
+        <p class="eyebrow">BIENVENUE CHEZ IBCGOS</p>
+        <h2>La formation au service de <span>votre réussite</span></h2>
+      </div>
+      <div class="intro-copy">
+        <p>Le centre de formation IBCGOS a pour vocation d'accompagner les apprenants et les professionnels dans le développement de leurs compétences.</p>
+        <p>Notre approche privilégie l'apprentissage, la pratique et l'évolution continue afin de vous aider à atteindre vos objectifs.</p>
+        <a class="text-link" href="#contact">Parlons de votre projet <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="programs section" id="formations">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">APPRENEZ À VOTRE RYTHME</p><h2>Nos domaines de <span>formation</span></h2></div>
+          <p>Des parcours pour acquérir de nouvelles compétences et renforcer votre expertise.</p>
+        </div>
+        <div class="cards">
+          <article class="course-card"><div class="card-icon">✦</div><h3>Informatique & Digital</h3><p>Développez vos compétences numériques et maîtrisez les outils d'aujourd'hui.</p><a href="#contact">En savoir plus <span>→</span></a></article>
+          <article class="course-card featured"><div class="card-icon">◎</div><h3>Management & Gestion</h3><p>Renforcez vos capacités en organisation, gestion et pilotage des activités.</p><a href="#contact">En savoir plus <span>→</span></a></article>
+          <article class="course-card"><div class="card-icon">↗</div><h3>Développement professionnel</h3><p>Faites évoluer vos compétences personnelles et votre parcours professionnel.</p><a href="#contact">En savoir plus <span>→</span></a></article>
+        </div>
+        <p class="disclaimer">Les domaines présentés sont des exemples et peuvent être adaptés à l'offre réelle du centre.</p>
+      </div>
+    </section>
+
+    <section class="why section container" id="avantages">
+      <div class="why-copy"><p class="eyebrow">NOTRE ENGAGEMENT</p><h2>Votre progression est <span>notre priorité.</span></h2><p>Nous croyons en une formation accessible, concrète et orientée vers vos objectifs. Notre ambition : vous donner les moyens d'aller plus loin.</p><a class="button button-primary" href="#contact">Contactez notre équipe</a></div>
+      <div class="benefits">
+        <div class="benefit"><span>01</span><div><h3>Accompagnement</h3><p>Un suivi attentif tout au long de votre parcours.</p></div></div>
+        <div class="benefit"><span>02</span><div><h3>Approche pratique</h3><p>Des apprentissages tournés vers des situations concrètes.</p></div></div>
+        <div class="benefit"><span>03</span><div><h3>Progression continue</h3><p>Des compétences utiles pour vos prochains défis.</p></div></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-inner">
+        <div><p class="eyebrow">RESTONS EN CONTACT</p><h2>Prêt à commencer<br><span>votre parcours ?</span></h2><p>Contactez IBCGOS pour obtenir plus d'informations sur nos formations.</p></div>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Votre nom</label><input id="name" name="name" type="text" placeholder="Nom et prénom" required>
+          <label for="email">Votre adresse e-mail</label><input id="email" name="email" type="email" placeholder="exemple@email.com" required>
+          <label for="message">Votre message</label><textarea id="message" name="message" rows="3" placeholder="Comment pouvons-nous vous aider ?" required></textarea>
+          <button class="button button-primary" type="submit">Envoyer le message</button>
+          <p id="formMessage" class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand brand-footer" href="#accueil"><span class="brand-mark">I</span><span>IBCGOS<small>Centre de formation</small></span></a><p>© <span id="year"></span> IBCGOS. Tous droits réservés.</p><a href="#accueil">Retour en haut ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
